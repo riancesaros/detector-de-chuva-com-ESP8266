@@ -1,18 +1,17 @@
 void setup() {
-  pinMode(D10, OUTPUT);
+  pinMode(D4, OUTPUT);
 
   Serial.begin(9600);
 }
 
 void loop() {
-  int val = analogRead(D0);
+  int val = analogRead(A0);
   Serial.println(val);
-  digitalWrite(D10, HIGH);
-  /*
-  if (val > 2000) {
-    digitalWrite(D1, HIGH);
-  }
-  
+
+  if (val <= 350) {
+    digitalWrite(D4 HIGH);
+    delay(900000);
+  } 
   /*
   if (val < 500) {
     digitalWrite(2, HIGH);
