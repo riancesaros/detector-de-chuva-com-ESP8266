@@ -14,7 +14,7 @@ void loop() {
   if (val <= 350) {
     delay(1000);
     digitalWrite(D4, HIGH);
-    delay(5000);
+    delay(100000);
   } 
   /*
   if (val < 500) {
